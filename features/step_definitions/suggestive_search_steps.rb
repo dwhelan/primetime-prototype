@@ -1,5 +1,3 @@
-require_relative '../../pages/home'
-
 Given /^I am on the home page$/  do
   @home_page = Home.new
   @home_page.load
