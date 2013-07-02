@@ -18,7 +18,7 @@ Then /^there should be (.+) search suggestions/ do |count|
   page.has_css?('#syn_suggestion_box ul li', count: count)
 end
 
-And /^each suggestion should contain "(.*?)"$/ do |search_phrase|
+And /^each suggestion should contain "(.+)"$/ do |search_phrase|
   page.all('#syn_suggestion_box ul li').each do |suggestion|
     suggestion.should have_content /#{search_phrase}/i
   end
