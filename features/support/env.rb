@@ -10,6 +10,6 @@ Dir['pages/**/*.rb'].each {|f| require "./#{f}"}
 end
 
 Capybara.configure do |config|
-  config.default_driver = :phantomjs
-  config.app_host = 'http://synacor.net'
+  config.default_driver = :firefox
+  config.app_host       = 'http://www.synacor.net'
 end

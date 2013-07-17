@@ -1,7 +1,7 @@
-Then /^the current page should have a search box$/ do
-  page = Page.current
-  page.should have_search
-  end
+
+Then(/^I should be able to "(\w+?)"$/) do |action|
+  current_page.element(action).should_not be_nil
+end
 
 Then /^the current page should have a Synacor logo$/ do
   page = Page.current
