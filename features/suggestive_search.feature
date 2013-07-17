@@ -1,7 +1,7 @@
 Feature: Suggestive search
 
   Background:
-    Given I am on the home page
+    Given I am on the "Home" page
 
   Scenario: should provide 5 search suggestions
     When I start searching for "f"

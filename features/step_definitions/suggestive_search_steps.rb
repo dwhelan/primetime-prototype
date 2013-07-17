@@ -1,7 +1,3 @@
-Given /^I am on the home page$/  do
-  Home.new.load
-end
-
 When(/^I start searching for "(.*?)"$/) do |input|
   current_page.search.input.set input
 end
