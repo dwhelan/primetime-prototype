@@ -17,3 +17,26 @@ See also:
 * [LeanDog's Jeff Morgan (aka Cheezy) page-object gem](https://github.com/cheezy/page-object)
 * [Joseph Wilk post](http://blog.josephwilk.net/cucumber/page-object-pattern.html)
 
+Installation (Mac)
+==================
+
+Download to a local folder
+
+    bundle install
+    cucumber
+
+Configuration
+=============
+
+It is currently configured for headless testing using PhantomJS. To run using a real browser edit features/support/env.rb and set:
+
+    config.default_driver = :chrome
+
+or
+
+    config.default_driver = :firefox
+
+or
+
+    config.default_driver = :safari
+
