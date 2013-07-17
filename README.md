@@ -3,11 +3,17 @@ primetime-prototype
 
 This is a working example of using the Page Object pattern to support Automated Acceptance Tests of browser functionality.
 
+The examples provide some minimal tests of [www.synacor.net](http://www.synacor.net) to show how to use the Page Object pattern
+for automated acceptance tests.
 
 This uses the following main gems:
 
-https://github.com/natritmeyer/site_prism (Page Objects for Capybara)
+* [cucumber](https://github.com/cucumber/cucumber) => BDD that talks to domain experts first and code second
+* [capybara](https://github.com/jnicklas/capybara) => Acceptance test framework for web applications
+* [site_prism](https://github.com/natritmeyer/site_prism) => A Page Object Model DSL for Capybara
 
 See also:
 
-http://blog.josephwilk.net/cucumber/page-object-pattern.html
+* [LeanDog's Jeff Morgan (aka Cheezy) page-object gem](https://github.com/cheezy/page-object)
+* [Joseph Wilk post](http://blog.josephwilk.net/cucumber/page-object-pattern.html)
+
